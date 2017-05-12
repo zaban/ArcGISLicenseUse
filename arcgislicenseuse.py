@@ -6,7 +6,8 @@ import subprocess
 # Alter 'dir' variable to point 'lmutil.exe' path
 # Alter 'clearScreen' variable according your OS (Windows = cls, Linux = clear)
 dir = r"E:\Program Files (x86)\ArcGIS\License10.3\bin"
-command = ["lmutil","lmstat","-a","-c","@lmgis.cesan.com.br"]
+# Change <license.manager.server> with the adddress of your ArcGIS License Manager server. ex.: lmserver.mycompany.com
+command = ["lmutil","lmstat","-a","-c","@<license.manager.server>"]
 clearScreen = "cls"
 
 # executa o comando lmutil e retorna o resultado
